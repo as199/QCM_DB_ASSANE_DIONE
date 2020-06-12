@@ -129,7 +129,7 @@ $totalquestion = $db->totalquestionsRowCount();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="../ressources/jquery/table-scroll.min.js"></script>
+   
 
     <!-- Bootstrap core JavaScript and others Local Links -->
 
