@@ -37,7 +37,7 @@
             </div>
             <button type="button" id="generer" name="genereur" onclick="genere()"><i class='fas fa-plus-square ' style='font-size:40px;color:blue'></i></button>
 
-        </form>
+        
     </div>
     <div class=" form-group " id="divgener">
         <div class="hautgener" id="hautgener">
