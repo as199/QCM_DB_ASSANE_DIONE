@@ -18,7 +18,13 @@ if (isset($_POST['username']) && $_POST['username'] != '' && isset($_POST['passw
     echo json_encode(array('error' => $rep));
 }
 
-
+// reset password
+if(isset($_POST['email'])){
+    $email= $_POST['email'];
+    $result = $db->recuperation($email);
+   $monpass = $result[0];
+   echo json_encode(array('error'=>$monpass));
+}
 
 
 // view all users
