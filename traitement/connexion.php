@@ -76,6 +76,23 @@
       return true;
 
     }
+      // recuperer password
+    public function recuperation($email){
+      $sql="SELECT * FROM utilisateur WHERE email=:email LIMIT 1";
+      $stmt = $this->conn->prepare($sql);
+      $stmt->execute(['email'=>$email]);
+      $count = $stmt->rowCount();
+      if($count>0){
+          $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+          foreach ($result as  $row) {
+            $data[] = $row['monpass'];
+          }
+          
+      }else{
+        $data[]=1;
+      }
+        return $data;
+    }
     // bloquer un utilisateur
     public function bloquer($id,$usersession){
       $t='';
