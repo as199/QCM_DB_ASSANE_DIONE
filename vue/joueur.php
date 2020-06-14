@@ -229,17 +229,16 @@ if ($limite[0] < count($_SESSION['total'])) {
                                                     ?>
 
                                                 </div>
-                                                <div class="form-row">
-                                                    <div class="col-md-6">
+                                                <div class="form-row col-xs-12">
+                                                    <div class="col-md-12">
                                                         <?php if ($_GET['page'] > 0) {  ?>
-                                                            <input class="btn btn-info col-md-12" type="submit" name="precedent" id="precedent" value="Précédent">
+                                                            <input class="btn btn-info col-xs-12" type="submit" name="precedent" id="precedent" value="Précédent">
                                                         <?php  } ?>
-                                                    </div>
-                                                    <div class="col-md-6">
+
                                                         <?php if ($_GET['page'] < $limite - 1) { ?>
-                                                            <input class="btn btn-info col-md-12" id="suivant" name="suivant" type="submit" value="Suivant">
+                                                            <input class="btn btn-info col-xs-6" style="float: inline-end;" id="suivant" name="suivant" type="submit" value="Suivant">
                                                         <?php } else {  ?>
-                                                            <input class="btn btn-info col-md-12" id="suivant" name="suivant" type="submit" value="Terminer">
+                                                            <input class="btn btn-info col-xs-6" style="float: inline-end;" id="suivant" name="suivant" type="submit" value="Terminer">
                                                         <?php } ?>
                                                     </div>
                                                 </div>
