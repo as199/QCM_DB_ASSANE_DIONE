@@ -18,7 +18,7 @@ $totalquestion = $db->totalquestionsRowCount();
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Simple Sidebar - Start Bootstrap Template</title>
+  <title>SamaJeux</title>
 
   <!-- Bootstrap core CSS -->
   <link href="../ressources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
