@@ -280,10 +280,10 @@ if ($limite[0] < count($_SESSION['total'])) {
                                                        
                                                         ?>
                                                             <tr style="width:50%;height: 35px;">
-                                                                <td><?php echo $mescore[0]['prenom']; ?></td>
-                                                                <td><?php echo $mescore[0]['nom']; ?></td>
+                                                                <td><?php echo $monmeilleur[0]['prenom']; ?></td>
+                                                                <td><?php echo $monmeilleur[0]['nom']; ?></td>
 
-                                                                <td><?php echo $mescore[0]['point'] . ' pts'; ?>
+                                                                <td><?php echo $monmeilleur[0]['point'] . ' pts'; ?>
                                                                 </td>
                                                             </tr>
 
