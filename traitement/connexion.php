@@ -149,7 +149,7 @@
       public function monmeilleurscore($id)
       {
         $data = array();
-        $sql = "SELECT utilisateur.prenom, utilisateur.nom ,score.point FROM utilisateur INNER JOIN score ON score.iduser = utilisateur.iduser where iduser=:id ORDER BY score.point DESC LIMIT 1";
+        $sql = "SELECT utilisateur.prenom, utilisateur.nom ,score.point FROM utilisateur INNER JOIN score ON score.iduser = utilisateur.iduser where utilisateur.iduser=:id ORDER BY score.point DESC LIMIT 1";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute(['id'=>$id]);
         $count = $stmt->rowCount();
